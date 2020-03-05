@@ -60,3 +60,15 @@
   [ARUJISAMA](http://127.0.0.1:3781) 에 접속할 수 있습니다! 회원가입을 하고 스탬프를 찍어보세요!
   
   
+## 로그인 페이지
+주인님 처음으로 보실 화면입니다.
+![LOGIN](./README_IMAGE/LOGIN.JPG)
+
+## 회원가입 페이지
+Arujisama가 처음이신 주인님께 필요한 화면입니다.
+![SIGN_UP](./README_IMAGE/SIGN_UP.JPG)
+
+## 메인 스탬프 페이지
+
+  스탬프 페이지에서 점선 칸에 새로운 스탬프를 찍어보세요!
+![MAIN](./README_IMAGE/MAIN.JPG)
