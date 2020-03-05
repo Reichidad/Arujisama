@@ -1,6 +1,6 @@
-from arujisama_flask.app import db
 from sqlalchemy import Column, ForeignKey
-
+from flask_sqlalchemy import SQLAlchemy
+from .. import db
 
 class UserAccount(db.Model):
     __tablename__ = "user_account"

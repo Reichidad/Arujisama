@@ -1,16 +1,17 @@
 import datetime
 import os
+from pathlib import Path
 
 
 def write_log(log="", ip="not known", id="", func="not known", memo=""):
     current_time = datetime.datetime.now()
 
-    cwd = os.getcwd()
-    directory = str(cwd) + "/app/log/"
-    if not(os.path.isdir(directory)):
-        os.makedirs(os.path.join(directory))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    directory = os.path.join(BASE_DIR, 'log')
+    if not (os.path.isdir(directory)):
+        Path(directory).mkdir(parents=True, exist_ok=True)
 
-    target_file = directory + "{0}.log".format(current_time.strftime("%Y-%m-%d"))
+    target_file = os.path.join(directory,"{0}.log".format(current_time.strftime("%Y-%m-%d")))
     timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
     log_message = "{0}) {1}\nip) {2}\nid) {3}\nfunc) {4}\nmemo) {5}\n\n".format(timestamp, log, ip, id, func, memo)

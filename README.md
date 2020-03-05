@@ -25,19 +25,29 @@
   3. **_arujisama/web_** 디렉토리에서 `npm install` 을 실행하여  
   프로젝트에서 사용된 JavaScript Dependency들을 인스톨합니다.
   
-  4. 프로젝트에 사용할 MySQL Server Connection을 준비해주세요.
+  4. **_arujisama/web_** 디렉토리에서 `npm run build` 를 실행하여 웹을 빌드합니다.
   
-  5. **_arujisama/arujisama_flask/app/config_files_** 디렉토리에  
+  5. 아래의 DB 세팅 과정까지 진행해 주세요.
+  
+  ### 로컬 DB 세팅
+  
+  저희 프로젝트에서 사용할 로컬 데이터베이스를 세팅하는 과정입니다.
+  
+  1. 프로젝트에 사용할 MySQL 혹은 mariaDB를 설치해 주세요.
+  
+  2. ```create database <사용할 데이터베이스 이름>;``` 명령어를 통해 이 프로젝트에 사용할 데이터베이스를 만들어 주세요.
+  
+  3. **_arujisama/arujisama_flask/app/config_files_** 디렉토리에  
   `dbinfo.json`과 `secret_key.json`파일을 다음의 내용으로 추가해주세요.
   
   * **_dbinfo.json_**
   ```{.json}
   {
    "HOST" : "127.0.0.1",
-   "PORT" : "PORT_NUMBER_YOU_WANT",
-   "USER" : "YOUR_MYSQL_CONNECTION_USER",
-   "PWD" : "YOUR_MYSQL_CONNECTION_PASSWORD",
-   "NAME" : "YOUR_MYSQL_CONNECTION_NAME"
+   "PORT" : "3306",
+   "USER" : "MYSQL 로그인 계정",
+   "PWD" : "MYSQL 비밀번호",
+   "NAME" : "사용할 데이터베이스 이름"
   }
    ```
    * **_secret_key.json_**
@@ -47,16 +57,16 @@
   }
   ```
   
-  6. DB Migration을 다음과 같이 진행해주세요.
+  6. arujisama_flask 폴더로 이동 후, 다음 명령어를 통해 DB Migration을 진행해주세요.
   ```
-  python arujisama/arujisama_flask/db_migration.py db init
-  python arujisama/arujisama_flask/db_migration.py db migrate
-  python arujisama/arujisama_flask/db_migration.py db upgrade
+  python db_migration.py db init
+  python db_migration.py db migrate
+  python db_migration.py db upgrade
   ```
   
-  7. **_arujisama/web_** 디렉토리에서 `npm run build` 를 실행하여 웹을 빌드합니다.
+
   
-  8. **_arujisama/arujisama_flask/run.py_** 를 실행하면  
+위 모든 과정을 마친 후, **_arujisama/arujisama_flask/run.py_** 를 실행하면  
   [ARUJISAMA](http://127.0.0.1:3781) 에 접속하실 수 있습니다! 회원가입을 하고 스탬프를 찍어보세요!
   
   
