@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+.button {
+  font-family: "Gloria Hallelujah", cursive;
+  position: relative;
+  top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.stampImage {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-image: url("./../assets/stampImage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 75px;
+  border: 5px solid #c01518;
+  outline: 0;
+  float: left;
+}
+.blankImage {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-image: url("./../assets/blankImage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 75px;
+  border: none;
+  float: left;
+}
+.nextStampImage {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-image: url("./../assets/blankImage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 75px;
+  border: 5px dotted #c01518;
+  outline: 0;
+  float: left;
+}
+.stampArea {
+  margin-left: 125px;
+  margin-right: 125rpx;
+}
+.koreanFont {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 24px;
+}
+#stampBackground {
+  background-image: url("./../assets/stampBackground.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#stampBox {
+  height: 660px;
+  width: 1100px;
+  position: relative;
+  top: -360px;
+  left: 660px;
+  background-image: url("./../assets/stampBoxBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#stampTitle {
+  width: 1100px;
+  height: 40px;
+  font-size: 40px;
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 800;
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+#headTitle {
+  width: 600px;
+  height: 60px;
+  font-size: 80px;
+  position: relative;
+  top: 0px;
+  left: 660px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 800;
+}
+#footer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  background: skyblue;
+}
+#feedbackbutton {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 15px;
+  width: 135px;
+  height: 30px;
+}
+#tempSpeechBubble {
+  font-family: "Nanum Pen Script", cursive;;
+  font-size: 25px;
+  height: 500px;
+  width: 400px;
+  position: relative;
+  top: 120px;
+  left: 125px;
+  border: 5px solid #bcbcbc;
+  background-color: rgba(255,255,255,0.5);
+  display : table-cell;
+  vertical-align : middle;
+}

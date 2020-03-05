@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+.font {
+  font-family: "Gloria Hallelujah", cursive;
+}
+.koreanFont {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 24px;
+}
+.textInputSize {
+  height: 30px;
+  width: 250px;
+}
+.loginButtonSize {
+  height: 120px;
+  width: 120px;
+}
+.otherButtonSize {
+  height: 30px;
+  width: 100px;
+}
+#loginTitle {
+  width: 600px;
+  height: 60px;
+  font-size: 80px;
+  position: relative;
+  top: 60px;
+  left: 660px;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 800;
+}
+#mainBox {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  top: 240px;
+  left: 660px;
+  border: 5px solid #bcbcbc;
+}
+#idpw {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  width: 20px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 40px;
+  float: left;
+}
+#textInput {
+  width: 250px;
+  height: 100px;
+  padding: 40px;
+  float: left;
+}
+#loginButton {
+  width: 120px;
+  height: 120px;
+  padding: 40px;
+  float: right;
+}
+#otherButtons {
+  clear: both;
+}

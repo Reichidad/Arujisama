@@ -1,0 +1,29 @@
+전체 공통
+리턴형은 모두 python의 str형으로 리턴함.
+조정에 따라 바꿔나가면 됨
+
+
+
+dbuser.py
+
+
+공통
+-99: DB에서 쿼리를 실행하는 도중 오류가 발생한 경우
+
+tryidexistcheck
+1: user_login에 id를 검색했을 때 검색 결과 없음
+2: user_login에 id를 검색했을 때 검색 결과 1개
+3: user_login에 id를 검색했을 때 검색 결과 2개 이상 <- UNIQUE 추가해둬서 왠만해선 안 벌어짐
+
+trylogin
+5: 입력된 ID/PW와 일치하는 row 발견 (== 로그인 성공)
+6: ID나 PW가 일치하는 row가 없음 (== 로그인 실패)
+
+trysignup
+7: 가입 시도한 ID가 이미 있음
+8: 가입 성공
+
+
+
+__init__.py
+4: /idexistcheck 또는 /login으로 접근했을 때 id가 2자 이상, 20자 이하에 맞지 않음.

@@ -1,0 +1,15 @@
+user_login
+idx         int         Primary Key, auto_increment
+id          char(20)    id. UNIQUE 속성 추가해둠.
+pw          char(50)    MD5로 암호화해서 저장한다.
+validuser   char(1)     현재로썬 'T', 'F' 만 생각 중
+validlink   char(50)    이메일 체크를 위해 만들어둠
+submitdate  datetime    현재로썬 최초 등록(입력) 날짜 기록
+
+
+user_info
+idx             int         Primary Key, auto_increment
+id              char(20)    id. UNIQUE 속성 추가해둠.
+name            char(30)    이름
+email           char(50)    이메일
+additional_skin char(1)     커스텀 스킨 적용여부

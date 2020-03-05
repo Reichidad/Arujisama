@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+#signUpBox {
+  width: 600px;
+  height: 520px;
+  position: relative;
+  top: 240px;
+  left: 660px;
+  border: 5px solid #bcbcbc;
+}
+.koreanFont {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 24px;
+}
+.idCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.idCheckButton {
+  position: relative;
+  left: 20px;
+}
+.floatLeft {
+  float: left;
+}
+.noticeFontSize {
+  font-size: 25px;
+}
+.buttonPosition {
+  margin-top: 100px;
+}
