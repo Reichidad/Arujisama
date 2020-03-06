@@ -20,7 +20,7 @@ db = SQLAlchemy()
 
 db.init_app(main_app)
 
-from arujisama_flask.app.dbcode import tables
+from .dbcode import tables
 
 migrate = Migrate(main_app, db)
 
