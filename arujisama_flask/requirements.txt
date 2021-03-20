@@ -10,7 +10,7 @@ Flask-Script==2.0.6
 Flask-SQLAlchemy==2.4.0
 importlib-metadata==0.19
 itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 Mako==1.1.2
 MarkupSafe==1.1.1
 more-itertools==7.2.0
