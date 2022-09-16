@@ -11,7 +11,7 @@ Flask-SQLAlchemy==2.4.0
 importlib-metadata==0.19
 itsdangerous==1.1.0
 Jinja2==2.10.1
-Mako==1.1.2
+Mako==1.2.2
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 packaging==19.0
