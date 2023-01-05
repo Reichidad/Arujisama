@@ -18,8 +18,8 @@
     "vue-session": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.12.1",
-    "@vue/cli-service": "^3.12.1",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "preload-webpack-plugin": "^2.3.0",
     "string-format": "^2.0.0",
